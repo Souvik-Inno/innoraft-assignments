@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <head>
+    
+  </head>
+  <body>
+    <div class="box" style="width: 100px; height: 100px; background-color: #ff0000"></div>
+    <p>Hide the red box on button click</p>
+    <button type="button">click me</button>
+</body> 
+<script src="jquery-3.6.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("button").click(function(){
+      $("div").hide();
+    });
+  });
+</script>
+  
+</html>
