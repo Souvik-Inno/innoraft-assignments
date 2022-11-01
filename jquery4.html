@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <head>
+    <style>
+      body{
+        padding: 25px;
+        color: white;
+      }
+      .title {
+      	color: #5C6AC4;
+      }
+      
+      .header {
+        background-color: #55d4eb;
+        grid-column-start: 1;
+        grid-column-end: -1;
+      }
+      
+      .sidebar {
+        background-color: #a0c263;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      
+      .mainContent {
+        background-color: #f5c531;
+      }
+      
+      .extra {
+        background-color: #898989;
+      }
+      
+      .footer {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        background-color: #ffa500;
+      }
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 15% 50% 20% 15%;
+        gap: 10px;
+        padding: 10px;
+        height: 80vh;
+      }
+      
+      .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="mainContent">Main Content</div>  
+      <div class="extra">Extra Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+
+  <script src="jquery-3.6.1.min.js"></script>
+  <script> 
+    $(document).ready(
+      $(".header").click(function(){
+        $(".header").css("background-color","red");  
+      }),
+      $(".sidebar").click(function(){
+        $(".sidebar").text("Leftbar");
+      }),
+      $(".extra").click(function(){
+        $(".mainContent").fadeOut();
+      })
+    );
+  </script>
+  
+</html>
+  
