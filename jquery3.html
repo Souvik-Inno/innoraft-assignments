@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <head>
+    <style> 
+      #content, #slide {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+      
+      #content {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="result">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" ><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" ><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+      
+  </body>
+  <script src="jquery-3.6.1.min.js"></script>
+  <script> 
+    $("#result").submit(function(){
+        if($("#fname").val() == '' && $("#lname").val() == ''){
+            alert("Please fill all the fields");
+            return false;   
+        }
+    });
+  </script>
+  
+</html>
