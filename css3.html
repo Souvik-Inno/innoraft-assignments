@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>css 3</title>
+    <meta name="description" content="css assignment 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-color: #e70000;
+        }
+
+        .mainBox {
+            color: white;
+            height: 100vh;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 50%;
+        }
+
+        .mainContent {
+            display: flex;
+            height: 50%;
+            justify-content: center;
+        }
+
+        .textBox{
+            width: 50%;
+            position: relative;
+            left: 100px;
+            top: 80px;
+        }
+        .image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item{
+            height:50vh;
+            width:33.33%;
+            background-color: #571212;
+            display: flex;
+            flex-direction: column;
+            border-style: solid;
+            border-color: #e70000;
+        }
+        h3{
+            padding: 10px;
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="mainBox">
+        <div class="mainContent">
+            <div class="textBox">
+                <h1>Down with the state</h1>
+                <p>
+                    Abandon the left vs right paradigm and adopt new ideals,where
+                    <br>
+                    consistency and logic reign supremes
+                </p>
+            </div>
+            <div class="image">
+                <img src="https://images.alphacoders.com/113/1133949.jpg" width="100px" height="100px">
+            </div>
+        </div>
+
+        <footer>
+            <div class="item" >
+                <h3>But what about the roads</h3>
+                <p>You just dont understand economics, like supply chains and demand. Dont worry kiddo
+                    I am there to make this website like its given
+                </p>
+            </div>
+            <div class="item">
+                <h3>Is taxation theft</h3>
+                <p>You just dont understand economics, like supply chains and demand. Dont worry kiddo
+                    I am there to make this website like its given.</p>
+            </div>
+            <div class="item">
+                <h3>So what you're saying is..</h3>
+                <p>You just dont understand economics, like supply chains and demand. Dont worry kiddo
+                    I am there to make this website like its given?</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <!-- <script src="jquery-3.6.1.min.js" async defer></script> -->
+</body>
+
+</html>
