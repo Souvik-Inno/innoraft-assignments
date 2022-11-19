@@ -24,8 +24,10 @@ html, body {
 }
 
 .headImage{
-    padding-top: 2%;
-    padding-left: 6%;
+    position: relative;
+    top: 2vh;
+    bottom:2vh;
+    left: 6%;
 }
 
 .mainNav > ul {
@@ -60,11 +62,18 @@ li{
     text-align: center;
     background-color: #06a3cc;
     color: white;
+    position: absolute;
+    float: left;
+    left: 0;
+    width: 100%;
+    top: 10vh;
+    height: 25vh;
 }
 
 .bannerContent{
     position: relative;
-    padding: 10%;
+    /* padding: 5%; */
+    top: 9vh;
 }
 
 .bannerContent div{
@@ -83,11 +92,11 @@ li{
     color: black;
 }
 
-.mainContainer .mainWrapper{
+/* .mainContainer .mainWrapper{
     margin: 10px auto;
     display: flex;
-    height: 500px;
-}
+    height: 20vh;
+} */
 
 .sidebar{
     background-color: #d39ed6;
@@ -101,30 +110,30 @@ li{
 
 .leftMain{
     background-color: #ffe469;
-    position: relative;
+    position: absolute;
     float: left;
     left: 8%;
-    top: 1vh;
+    top: 36vh;
     width: 41.3%;
     height: 52vh;
 }
 
 .rightMainTop{
     background-color: #ed8719;
-    position: relative;
+    position: absolute;
     float: right;
     right: 8%;
-    top: 1vh;
+    top: 36vh;
     width: 41.3%;
     height: 32vh;;
 }
 
 .rightMainBottom{
     background-color: #8ae33b;
-    position: relative;
+    position: absolute;
     float: right;
     right: 8%;
-    top: 2vh;
+    top: 69vh;
     width: 41.3%;
     height: 19vh;;
 }
