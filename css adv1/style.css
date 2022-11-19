@@ -1,0 +1,147 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.headPart {
+    background-color: #d9d9d9;
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #06a3cc;
+}
+
+.headContent .headImage{
+    float: left;
+}
+
+.headImage{
+    padding-top: 2%;
+    padding-left: 6%;
+}
+
+.mainNav > ul {
+    float: right;
+    list-style: none;
+    display: block;
+}
+
+.mainNav li {
+    display: inline-block;
+    
+}
+
+li{
+    height: 3vh;
+    width: 10vh;
+    text-align: center;
+}
+
+.mainNav{
+    overflow: hidden;
+    padding: 2%;
+}
+
+
+.mainNav li:hover{
+    background-color: black;
+    color: white;
+}
+
+.banner{
+    text-align: center;
+    background-color: #06a3cc;
+    color: white;
+}
+
+.bannerContent{
+    position: relative;
+    padding: 10%;
+}
+
+.bannerContent div{
+    display: inline-block;
+}
+
+.left-arrow{
+    float: left;
+    font-size: larger;
+    color: black;
+}
+
+.right-arrow{
+    float: right;
+    font-size: larger;
+    color: black;
+}
+
+.mainContainer .mainWrapper{
+    margin: 10px auto;
+    display: flex;
+    height: 500px;
+}
+
+.sidebar{
+    background-color: #d39ed6;
+    position: absolute;
+    float: left;
+    left: 5%;
+    width: 25%;
+    top: 45vh;
+    height: 36vh;
+}
+
+.leftMain{
+    background-color: #ffe469;
+    position: relative;
+    float: left;
+    left: 8%;
+    top: 1vh;
+    width: 41.3%;
+    height: 52vh;
+}
+
+.rightMainTop{
+    background-color: #ed8719;
+    position: relative;
+    float: right;
+    right: 8%;
+    top: 1vh;
+    width: 41.3%;
+    height: 32vh;;
+}
+
+.rightMainBottom{
+    background-color: #8ae33b;
+    position: relative;
+    float: right;
+    right: 8%;
+    top: 2vh;
+    width: 41.3%;
+    height: 19vh;;
+}
+
+footer{
+    background-color: #007694;
+    position: absolute;
+    bottom: 0;
+    top: 92vh;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+footer div {
+    display: inline-block;
+    position: relative;
+    top: 2vh;
+    left: 35%;
+}
