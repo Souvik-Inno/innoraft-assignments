@@ -16,59 +16,67 @@
   <!-- <link rel="stylesheet" href="newstyle.css"> -->
   <style>
     * {
-      color: white;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       text-align: center;
+      color: white;
     }
 
-    header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 10vh;
-      background-color: #55d4eb;
-
+    body {
+      width: 100vw;
     }
 
-    .centerText {
+    .center-text {
       position: relative;
       top: 3vh;
     }
 
-    .sidebar {
-      background-color: #a0c263;
-      position: absolute;
-      top: 12vh;
-      left: 0;
-      height: 76vh;
-      width: 33%;
+    header {
+      height: 13vh;
+      background-color: #55d4eb;
     }
 
-    .mainContent {
+    .main-content {
+      height: 74vh;
+      width: 100vw;
+    }
+
+    .main-content div {
+      display: inline-block;
+    }
+
+    .sidebar {
+      float: left;
+      background-color: #a0c263;
+      height: 70vh;
+      width: 26vw;
+      margin-top: 2vh;
+    }
+
+    .main-right {
+      float: right;
+      height: 70vh;
+      width: 72vw;
+      margin-top: 2vh;
+    }
+
+    .main-right-up {
+      height: 58vh;
+      width: 72vw;
       background-color: #f5c531;
-      position: absolute;
-      top: 12vh;
-      right: 0;
-      height: 60vh;
-      width: 65.7%;
     }
 
     .extra {
       background-color: #898989;
-      position: absolute;
-      top: 74vh;
-      right: 0;
-      height: 14vh;
-      width: 65.7%;
+      height: 10vh;
+      width: 72vw;
+      margin-top: 2vh;
     }
 
     footer {
+      height: 13vh;
       background-color: #ffa500;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 10vh;
     }
   </style>
 </head>
@@ -76,31 +84,35 @@
 <body>
 
   <header>
-    <div class="centerText">
+    <div class="center-text">
       Header
     </div>
   </header>
 
-  <div class="sidebar">
-    <div class="centerText">
-      Sidebar
+  <section class="main-content">
+    <div class="sidebar">
+      <div class="center-text">
+        Sidebar
+      </div>
     </div>
-  </div>
 
-  <div class="mainContent">
-    <div class="centerText">
-      Main Content
-    </div>
-  </div>
+    <div class="main-right">
+      <div class="main-right-up">
+        <div class="center-text">
+          Main Content
+        </div>
+      </div>
 
-  <div class="extra">
-    <div class="centerText">
-      Extra Content
+      <div class="extra">
+        <div class="center-text">
+          Extra Content
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <footer>
-    <div class="centerText">
+    <div class="center-text">
       Footer
     </div>
   </footer>
