@@ -15,54 +15,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="newstyle.css"> -->
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+    }
+
     header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 16vh;
+      height: 18vh;
       background-color: #ff4da6;
     }
 
-    .mainLeft {
-      background-color: #ff037e;
-      position: absolute;
-      left: 0;
-      top: 18vh;
-      height: 63vh;
-      width: 60%;
+    .main {
+      height: 60vh;
+      width: 100vw;
     }
 
-    .mainRight {
+    .main div {
+      display: inline-block;
+    }
+
+    .main-left {
+      height: 60vh;
+      width: 60vw;
+      background-color: #ff037e;
+      float: left;
+      margin: 2vh 2vw 0 0;
+    }
+
+    .main-right {
+      height: 60vh;
+      width: 38vw;
       background-color: #ce0468;
-      position: absolute;
-      right: 0;
-      top: 18vh;
-      height: 63vh;
-      width: 38%;
+      margin-top: 2vh;
     }
 
     footer {
+      height: 18vh;
       background-color: #802755;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 17vh;
+      margin-top: 4vh;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-  </header>
-  <div class="mainLeft">
-  </div>
-  <div class="mainRight">
-  </div>
-  <footer>
-  </footer>
+  <header></header>
+
+  <section class="main">
+    <div class="main-left"></div>
+    <div class="main-right"></div>
+  </section>
+
+  <footer></footer>
 
 </body>
 <script src="jquery-3.6.1.min.js" async defer></script>
