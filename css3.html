@@ -9,119 +9,134 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>
-    css 2
+    css 3
   </title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="newstyle.css"> -->
   <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: white;
+      font-size: 2vw;
+    }
+
     body {
       background-color: #e70000;
-      color: white;
-      text-align: center;
     }
 
-    .mainContent {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+    h1,
+    h2 {
+      font-size: 3vw;
+      margin-top: 2vh;
+      margin-left: 1.8vw;
+    }
+
+    .box-desc-text {
+      margin-top: 2vh;
+      margin-left: 1.8vw;
+    }
+
+    img {
+      width: 20vw;
+      height: 20vh;
+    }
+
+    .main-content {
       height: 60vh;
-      text-align: left;
+      width: 100%;
     }
 
-    .textPart {
-      position: relative;
-      top: 8vh;
-      left: 4%;
+    .inblock {
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .text-part {
+      margin: 8vh 6vw;
     }
 
     .logo {
-      position: relative;
-      right: 0;
-      left: 65%;
+      float: right;
+      margin: 4vh 6vw;
+    }
+
+    .box {
+      display: inline-block;
+      background-color: #571212;
+      height: 40vh;
+      width: 32vw;
+      overflow: clip;
     }
 
     .box1 {
-      background-color: #571212;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 40vh;
-      width: 33%;
-    }
-
-    .box2 {
-      background-color: #571212;
-      position: absolute;
-      bottom: 0;
-      left: 34%;
-      height: 40vh;
-      width: 33%;
+      float: left;
+      margin-right: 1.5vw;
     }
 
     .box3 {
-      background-color: #571212;
-      position: absolute;
-      bottom: 0;
-      left: 68%;
-      right: 0;
-      height: 40vh;
-      width: 32%;
+      float: right;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="mainContent">
-    <div class="textPart">
+  <div class="main-content">
+    <div class="text-part inblock">
       <div>
         <h1>Down with the state</h1>
       </div>
-      <div>
-        sfdghbas asbhjb bhfgjkadbvdbavib fbgadjkvbadjkvb <br>hbfvjhbadvjb sfbvjadvbadjvbj
+      <div class="box-desc-text">
+        sfdghbas asbhjb bhfgjkadbvdbavib <br>fbgadjkvbadjkvb <br>hbfvjhbadvjb sfbvjadvbadjvbj
       </div>
     </div>
 
-    <div class="logo">
-      <img src="https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884__340.png" width="20%" height="100vh">
-    </div>
-
-  </div>
-
-  <div class="box1">
-    <div>
-      <div>
-        <h2>But what about the roads?</h2>
-      </div>
-      <div>
-        asjfgkjf asbdfjhbfvjhsba fvbasfjbsjfbsjdfvbasjvb safvbsajfdvbqsfb
-      </div>
+    <div class="logo inblock">
+      <img
+        src="https://www.clipartmax.com/png/middle/38-380975_superman-logo-by-mr-droy-on-clipart-library-batman-logo-without-background.png"
+        width="100px" height="100px">
     </div>
   </div>
 
-  <div class="box2">
-    <div>
-      <div>
-        <h2>Is taxation theft?</h2>
-      </div>
-      <div>
-        asjfgkjf asbdfjhbfvjhsba fvbasfjbsjfbsjdfvbasjvb safvbsajfdvbqsfb
+  <footer>
+    <div class="box box1">
+      <div class="box-text">
+        <div>
+          <h2>But what about the roads?</h2>
+        </div>
+        <div class="box-desc-text">
+          asjfgkjf asbdfjhbfvjhsba fvbasfjbsjfbsjdfvbasjvb safvbsajfdvbqsfb
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="box3">
-    <div>
-      <div>
-        <h1>So, what you're saying is...?</h1>
-      </div>
-      <div>
-        asjfgkjf asbdfjhbfvjhsba fvbasfjbsjfbsjdfvbasjvb safvbsajfdvbqsfb
+    <div class="box box2">
+      <div class="box-text">
+        <div>
+          <h2>Is taxation theft?</h2>
+        </div>
+        <div class="box-desc-text">
+          asjfgkjf asbdfjhbfvjhsba fvbasfjbsjfbsjdfvbasjvb safvbsajfdvbqsfb
+        </div>
       </div>
     </div>
-  </div>
+
+    <div class="box box3">
+      <div class="box-text">
+        <div>
+          <h2>So, what you're saying is...?</h2>
+        </div>
+        <div class="box-desc-text">
+          asjfgkjf asbdfjhbfvjhsba fvbasfjbsjfbsjdfvbasjvb safvbsajfdvbqsfb
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 
 </body>
 <script src="jquery-3.6.1.min.js" async defer></script>
