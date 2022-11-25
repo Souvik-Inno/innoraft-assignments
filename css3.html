@@ -27,13 +27,16 @@
       background-color: #e70000;
     }
 
-    h1, h2 {
-      padding: 5%;
-      font-size: 4vw;
+    h1,
+    h2 {
+      font-size: 3vw;
+      margin-top: 2vh;
+      margin-left: 1.8vw;
     }
 
     .box-desc-text {
-      padding-top: 2vh;
+      margin-top: 2vh;
+      margin-left: 1.8vw;
     }
 
     img {
@@ -52,40 +55,42 @@
     }
 
     .text-part {
-      padding: 5%;
-  
-    }
-
-    .box-desc-text{
-      padding: 5%;
+      margin: 8vh 6vw;
     }
 
     .logo {
       float: right;
-      margin: 10%;
+      margin: 4vh 6vw;
     }
 
     .box {
+      display: inline-block;
       background-color: #571212;
       height: 40vh;
-      width: 33.33vw;
+      width: 33.33%;
       overflow: clip;
-      float: left;
     }
+
     .box:nth-child(1){
-      padding-right: 1vw;
+      float: left;
+      padding-right: 1%;
       background-clip: content-box;
     }
+
     .box:nth-child(2){
-      padding-left: 1vw;
-      padding-right: 1vw;
+      padding: 0 1%;
       background-clip: content-box;
     }
+
     .box:nth-child(3){
-      padding-left: 1vw;
+      float: right;
+      padding-left: 1%;
       background-clip: content-box;
     }
-    
+
+    /* .box3 {
+      float: right;
+    } */
   </style>
 </head>
 
@@ -109,7 +114,7 @@
   </div>
 
   <footer>
-    <div class="box">
+    <div class="box box1">
       <div class="box-text">
         <div>
           <h2>But what about the roads?</h2>
@@ -120,7 +125,7 @@
       </div>
     </div>
 
-    <div class="box">
+    <div class="box box2">
       <div class="box-text">
         <div>
           <h2>Is taxation theft?</h2>
@@ -131,7 +136,7 @@
       </div>
     </div>
 
-    <div class="box">
+    <div class="box box3">
       <div class="box-text">
         <div>
           <h2>So, what you're saying is...?</h2>
