@@ -28,10 +28,12 @@
     header {
       height: 18vh;
       background-color: #ff4da6;
+      padding-bottom: 1vh;
+      background-clip: content-box;
     }
 
     .main {
-      height: 60vh;
+      height: 64vh;
       width: 100vw;
     }
 
@@ -39,25 +41,36 @@
       display: inline-block;
     }
 
-    .main-left {
-      height: 60vh;
-      width: 60vw;
-      background-color: #ff037e;
+    .main-inner--content {
+      height: 100%;
+      width: 60%;
       float: left;
-      margin: 2vh 2vw 0 0;
+      padding: 1vh 1vw 1vh 0;
     }
 
-    .main-right {
-      height: 60vh;
-      width: 38vw;
-      background-color: #ce0468;
-      margin-top: 2vh;
+    .main-inner--content div{
+      height: 100%;
+      width: 100%;
+      background-color: #ff037e;
+    }
+
+    .main-inner--side {
+      height: 100%;
+      width: 40%;
+      padding: 1vh 0 1vh 1vw;
+    }
+
+    .main-inner--side div{
+      height: 100%;
+      width: 100%;
+      background-color: #ff037e;
     }
 
     footer {
       height: 18vh;
       background-color: #802755;
-      margin-top: 4vh;
+      padding-top: 1vh;
+      background-clip: content-box;
     }
   </style>
 </head>
@@ -67,8 +80,14 @@
   <header></header>
 
   <section class="main">
-    <div class="main-left"></div>
-    <div class="main-right"></div>
+      <div class="main-inner--content ">
+        <div></div>
+      </div>
+      <div class="main-inner--side">
+        <div></div>
+      </div>
+
+    
   </section>
 
   <footer></footer>
