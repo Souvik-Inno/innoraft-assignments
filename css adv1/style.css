@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow: hidden;
+}
+
 header{
     background: #d9d9d9;
     height: 10vh;
@@ -44,6 +48,7 @@ nav li{
 
 .banner-wrapper{
     display: flex;
+    width: 100vw;
     column-gap: 20px;
     justify-content: space-between;
     padding-top: 8vh;
