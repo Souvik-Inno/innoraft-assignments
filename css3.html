@@ -20,77 +20,73 @@
       margin: 0;
       box-sizing: border-box;
       color: white;
-      font-size: 2vw;
     }
 
     body {
       background-color: #e70000;
     }
 
-    h1,
-    h2 {
-      font-size: 3vw;
-      margin-top: 2vh;
-      margin-left: 1.8vw;
-    }
 
     .box-desc-text {
-      margin-top: 2vh;
-      margin-left: 1.8vw;
+      padding-top: 4px;
+      padding-left: 4px;
     }
 
     img {
-      width: 20vw;
-      height: 20vh;
+      width: 180px;
+
     }
 
     .main-content {
-      height: 60vh;
+      height: 500px;
       width: 100%;
     }
 
     .inblock {
       display: inline-block;
-      overflow: hidden;
+      /* overflow: hidden; */
     }
 
     .text-part {
-      margin: 8vh 6vw;
+      padding: 100px 90px;
     }
 
     .logo {
       float: right;
-      margin: 4vh 6vw;
+      padding-right: 100px;
+      padding-top: 100px;
     }
 
     .box {
       display: inline-block;
       background-color: #571212;
-      height: 40vh;
+      height: 303px;
       width: 33.33%;
-      overflow: clip;
+      /* overflow: clip; */
     }
 
-    .box:nth-child(1){
+    .box-text {
+      padding: 30px;
+    }
+
+
+
+    .box:nth-child(1) {
       float: left;
-      padding-right: 1%;
+      padding-right: 12px;
       background-clip: content-box;
     }
 
-    .box:nth-child(2){
-      padding: 0 1%;
+    .box:nth-child(2) {
+      padding: 0 12px;
       background-clip: content-box;
     }
 
-    .box:nth-child(3){
+    .box:nth-child(3) {
       float: right;
-      padding-left: 1%;
+      padding-left: 12px;
       background-clip: content-box;
     }
-
-    /* .box3 {
-      float: right;
-    } */
   </style>
 </head>
 
@@ -108,13 +104,12 @@
 
     <div class="logo inblock">
       <img
-        src="https://www.clipartmax.com/png/middle/38-380975_superman-logo-by-mr-droy-on-clipart-library-batman-logo-without-background.png"
-        width="100px" height="100px">
+        src="https://www.clipartmax.com/png/middle/38-380975_superman-logo-by-mr-droy-on-clipart-library-batman-logo-without-background.png">
     </div>
   </div>
 
   <footer>
-    <div class="box box1">
+    <div class="box1-content box">
       <div class="box-text">
         <div>
           <h2>But what about the roads?</h2>
@@ -124,6 +119,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="box box2">
       <div class="box-text">
@@ -136,6 +132,7 @@
       </div>
     </div>
 
+
     <div class="box box3">
       <div class="box-text">
         <div>
@@ -146,11 +143,12 @@
         </div>
       </div>
     </div>
+
+
   </footer>
 
 
 
 </body>
-<script src="jquery-3.6.1.min.js" async defer></script>
 
 </html>
