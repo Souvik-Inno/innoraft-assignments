@@ -10,7 +10,7 @@ body{
 
 header{
     background: #d9d9d9;
-    height: 10vh;
+    height: 80px;
 }
 
 .head-content{
@@ -19,12 +19,12 @@ header{
 
 .head-content--image{
     float: left;
-    padding: 1%;
+    padding: 10px;
 }
 
 .head-content--nav{
     float: right;
-    width: 40%;
+    width: 400px;
 }
 
 nav li{
@@ -37,27 +37,24 @@ nav li{
 }
 
 nav li{
-    padding: 4%;
-    margin: 1%
+    padding: 20px;
 }
 
 .banner{
-    height: 25vh;
+    height: 200px;
     background: #06a3cc;
 }
 
 .banner-wrapper{
     display: flex;
-    width: 100vw;
-    column-gap: 20px;
     justify-content: space-between;
-    padding-top: 8vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
 }
 
 .banner-content--left-arrow{
-    height: 5vh;
+    height: 50px;
 }
 
 .banner-content--text{
@@ -66,29 +63,27 @@ nav li{
 }
 
 .banner-content--right-arrow{
-    height: 5vh;
+    height: 50px;
 }
 
 .main{
-    height: 55vh;
-    width: 100vw;
+    height: 450px;
     font-size: 0;
-    padding: 1% 7%;
+    padding: 10px 90px;
+    position: relative;
 }
 
 .main-content--body{
     height: 100%;
     width: 50%;
     background: #ffe469;
-    padding-right: 1%;
+    padding-right: 20px;
     background-clip: content-box;
 }
 
 .main-content--section-wrapper{
     height: 100%;
     width: 50%;
-    padding-left: 1%;
-    background-clip: content-box;
 }
 
 .main-inblock{
@@ -99,7 +94,7 @@ nav li{
     height: 60%;
     width: 100%;
     background: #ed8719;
-    padding-bottom: 1%;
+    padding-bottom: 20px;
     background-clip: content-box;
 }
 
@@ -107,22 +102,20 @@ nav li{
     height: 40%;
     width: 100%;
     background: #8ae33b;
-    padding-top: 1%;
     background-clip: content-box;
 }
 
 .main-content--positioned{
     background: #d39ed6;
     position: absolute;
-    height: 40vh;
-    width: 30vh;
-    top: 40vh;
-    left: 3vw;
+    height: 300px;
+    width: 260px;
+    top: 40px;
+    left: 40px;
 }
 
 footer{
-    height: 10vh;
-    width: 100vw;
+    height: 100px;
     background: #007694;
     color: white;
     text-align: center;
@@ -130,5 +123,5 @@ footer{
 
 .footer-nav li{
     display: inline-block;
-    padding: 2% 0.5%;
+    padding: 25px 5px;
 }
