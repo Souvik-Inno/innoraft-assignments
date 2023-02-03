@@ -1,4 +1,4 @@
-# innoraft-assignments
+# innoraft-assignments-uttam
 ## HTML assignments
 assignment done: 1, 2, 3
 ## CSS assignments
